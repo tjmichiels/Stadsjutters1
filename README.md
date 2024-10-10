@@ -16,5 +16,7 @@ https://stadsjuttersalmere.wordpress.com/
 
 ## Dependencies
 Java SDK 17.0 - https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+
 Android SDK 34 ??? weet niet zeker of dit nodig is - https://androidsdkmanager.azurewebsites.net/sdk_platform.html
-dotnet build -t:InstallAndroidDependencies -f net8.0-android "-p:AndroidSdkDirectory=C:\Users\thoju\AppData\Local\Android\sdk" "-p:AcceptAndroidSDKLicenses=true"
+
+**Command uitvoeren:** - dotnet build -t:InstallAndroidDependencies -f net8.0-android "-p:AndroidSdkDirectory=C:\Users\thoju\AppData\Local\Android\sdk" "-p:AcceptAndroidSDKLicenses=true"
