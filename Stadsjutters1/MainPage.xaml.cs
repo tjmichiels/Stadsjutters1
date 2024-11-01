@@ -2,22 +2,12 @@
 
 public partial class MainPage : ContentPage
 {
-    int count = 0;
     
     public MainPage()
     {
         InitializeComponent();
     }
-
-    private void OnCounterClicked(object sender, EventArgs e)
-    {
-        count++;
-
-        if (count == 1)
-            CounterBtn.Text = $"Clicked {count} time";
-        else
-            CounterBtn.Text = $"Clicked {count} times";
-
-        SemanticScreenReader.Announce(CounterBtn.Text);
-    }
 }
+
+// Hier gebruiken we eigenlijk de C# code om bepaalde acties te laten uitvoeren voor 
+// de widgets. Bedenk maar zelf hoe en wat want dit is voor mij ook nog uitvogelen

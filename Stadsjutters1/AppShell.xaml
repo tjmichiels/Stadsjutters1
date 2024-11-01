@@ -6,7 +6,8 @@
     xmlns:local="clr-namespace:Stadsjutters1"
     Shell.FlyoutBehavior="Disabled"
     Title="Stadsjutters1">
-
+    
+    
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
