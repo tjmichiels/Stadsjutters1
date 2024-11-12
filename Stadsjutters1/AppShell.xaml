@@ -4,13 +4,55 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Stadsjutters1"
-    Shell.FlyoutBehavior="Disabled"
-    Title="Stadsjutters1">
-    
-    
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    Title="Stadsjutters1"
+    FlyoutBehavior="Flyout">
 
+    <Shell.TitleView>
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="10">
+            <Label Text="Paginanaam" HorizontalOptions="CenterAndExpand" FontSize="Medium" />
+            <Image Source="profile_icon.png" HorizontalOptions="End" />
+        </StackLayout>
+    </Shell.TitleView>
+
+    <FlyoutItem Title="Profiel" Icon="profile_icon.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" /> 
+    </FlyoutItem>
+
+    <FlyoutItem Title="Mijn straat-/huisvondsten" Icon="findings_icon.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Mijn beoordelingen" Icon="reviews_icon.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Opgeslagen vondsten" Icon="saved_icon.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Instellingen" Icon="settings_icon.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <TabBar>
+        <Tab Title="Home" Icon="home_icon.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        
+        <Tab Title="Vondsten" Icon="location_icon.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        
+        <Tab Title="Plaatsen" Icon="plus_icon.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+
+        <Tab Title="Chats" Icon="chat_icon.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+
+        <Tab Title="Meldingen" Icon="notification_icon.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+    </TabBar>
 </Shell>
