@@ -14,44 +14,44 @@
         </StackLayout>
     </Shell.TitleView>
 
-    <FlyoutItem Title="Profiel" Icon="">
+    <FlyoutItem Title="Profiel" Icon="logostadsjutters.svg">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" /> 
     </FlyoutItem>
 
-    <FlyoutItem Title="Mijn straat-/huisvondsten" Icon="">
+    <FlyoutItem Title="Mijn straat-/huisvondsten" Icon="logostadsjutters.svg">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Mijn beoordelingen" Icon="">
+    <FlyoutItem Title="Mijn beoordelingen" Icon="logostadsjutters.svg">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Opgeslagen vondsten" Icon="">
+    <FlyoutItem Title="Opgeslagen vondsten" Icon="logostadsjutters.svg">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Instellingen" Icon="">
+    <FlyoutItem Title="Instellingen" Icon="logostadsjutters.svg">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 
     <TabBar>
-        <Tab Title="Home" Icon="">
+        <Tab Title="Home" Icon="logostadsjutters.svg">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
         
-        <Tab Title="Vondsten" Icon="">
+        <Tab Title="Vondsten" Icon="logostadsjutters.svg">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
         
-        <Tab Title="Plaatsen" Icon="">
+        <Tab Title="Plaatsen" Icon="logostadsjutters.svg">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
 
-        <Tab Title="Chats" Icon="">
+        <Tab Title="Chats" Icon="logostadsjutters.svg">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
 
-        <Tab Title="Meldingen" Icon="">
+        <Tab Title="Meldingen" Icon="logostadsjutters.svg">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
     </TabBar>
