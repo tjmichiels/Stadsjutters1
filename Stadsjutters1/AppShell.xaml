@@ -14,7 +14,7 @@
         </StackLayout>
     </Shell.TitleView>
 
-    <FlyoutItem Title="Profiel" Icon="person_24dp_000000.png">
+    <FlyoutItem Title="Profiel" Icon="person_24dp_f19e39.png">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" /> 
     </FlyoutItem>
 
