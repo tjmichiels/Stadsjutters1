@@ -63,18 +63,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <MauiXaml Update="Pages\ChatsPage.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </MauiXaml>
-      <MauiXaml Update="Pages\HomePage.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </MauiXaml>
-      <MauiXaml Update="Pages\MeldingenPage.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </MauiXaml>
-      <MauiXaml Update="Pages\VondstenPage.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </MauiXaml>
+      <Folder Include="Pages\" />
     </ItemGroup>
 
 </Project>

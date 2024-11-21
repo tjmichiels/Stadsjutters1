@@ -9,7 +9,7 @@
 
     <Shell.TitleView>
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="10">
-            <Label Text="Paginanaam" HorizontalOptions="CenterAndExpand" FontSize="Medium" />
+            <Label Text="Home Page" HorizontalOptions="CenterAndExpand" FontSize="Medium" />
             <Image Source="profile_icon.png" HorizontalOptions="End" />
         </StackLayout>
     </Shell.TitleView>
@@ -19,23 +19,23 @@
     </FlyoutItem>
 
     <FlyoutItem Title="Mijn straat-/huisvondsten" Icon="package_2_24dp_000000.png">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent ContentTemplate="{DataTemplate local:Straatvondsten}" />
     </FlyoutItem>
 
     <FlyoutItem Title="Mijn beoordelingen" Icon="star_24dp_000000.png">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent ContentTemplate="{DataTemplate local:Beoordelingen}" />
     </FlyoutItem>
 
     <FlyoutItem Title="Opgeslagen vondsten" Icon="bookmark_24dp_000000.png">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent ContentTemplate="{DataTemplate local:OpgeslagenVondsten}" />
     </FlyoutItem>
 
     <FlyoutItem Title="Instellingen" Icon="settings_24dp_000000.png">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent ContentTemplate="{DataTemplate local:Instellingen}" />
     </FlyoutItem>
     
     <FlyoutItem Title="Beheerdersdashboard" Icon="dashboard_2_24dp_000000.png">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent ContentTemplate="{DataTemplate local:BeheersDashboard}" />
     </FlyoutItem>
     
     <FlyoutItem Title="Log uit" Icon="logout_24dp_000000.png">
@@ -45,6 +45,12 @@
     <FlyoutItem Title="Log in" Icon="login_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
+    
+  
+    
+    
+   
+    
 
     <TabBar>
         <Tab Title="Home" Icon="logostadsjutters.svg">
