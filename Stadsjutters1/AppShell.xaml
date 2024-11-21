@@ -69,8 +69,4 @@
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
 
-        <Tab Title="Meldingen" Icon="logostadsjutters.svg">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
-        </Tab>
-    </TabBar>
 </Shell>
