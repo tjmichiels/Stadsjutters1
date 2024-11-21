@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Stadsjutters1.Pages;
+namespace Stadsjutters1;
 
-public partial class HomePage : ContentPage
+public partial class ProfilePage : ContentPage
 {
-    public HomePage()
+    public ProfilePage()
     {
         InitializeComponent();
     }

@@ -2,9 +2,8 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Stadsjutters1.Pages.HomePage"
-             Title="Home">
+             x:Class="Stadsjutters1.Pages.PlaceFindingPage">
     <ContentPage.Content>
-        <Label>Vondsten</Label>
+        
     </ContentPage.Content>
 </ContentPage>

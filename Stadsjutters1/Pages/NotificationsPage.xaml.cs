@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Stadsjutters1.Pages;
 
-public partial class HomePage : ContentPage
+public partial class NotificationsPage : ContentPage
 {
-    public HomePage()
+    public NotificationsPage()
     {
         InitializeComponent();
     }
