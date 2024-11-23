@@ -5,6 +5,6 @@
              x:Class="Stadsjutters1.Pages.HomePage"
              Title="Home">
     <ContentPage.Content>
-        <Label>Vondsten</Label>
+        <Label>Homepage</Label>
     </ContentPage.Content>
 </ContentPage>

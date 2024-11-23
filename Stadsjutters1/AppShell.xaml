@@ -6,12 +6,13 @@
     xmlns:local="clr-namespace:Stadsjutters1"
     xmlns:pages="clr-namespace:Stadsjutters1.Pages"
     Title="Stadsjutters1"
-    FlyoutBehavior="Flyout">
+    FlyoutBehavior="Flyout"
+    >
     
     <!-- Primaire navigatiebalk -->
     <TabBar>
         <Tab Title="Home" Icon="home_24dp_f19e39.png">
-            <ShellContent ContentTemplate="{DataTemplate pages:HomePage}" />
+            <ShellContent Title="Home" Route="Home" ContentTemplate="{DataTemplate pages:HomePage}" />
         </Tab>
         
         <Tab Title="Vondsten" Icon="package_2_24dp_f19e39.png*">
@@ -43,8 +44,11 @@
             </Image>
         </StackLayout>
     </Shell.TitleView>
-
+    
     <!-- Flyout -->
+    <FlyoutItem Title="Home" Icon="home_24dp_f19e39.png">
+        <ShellContent ContentTemplate="{DataTemplate pages:HomePage}" Shell.NavBarIsVisible="True"/>
+    </FlyoutItem>
     <FlyoutItem Title="Profiel" Icon="person_24dp_f19e39.png">
         <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}" Shell.NavBarIsVisible="True"/>
     </FlyoutItem>
