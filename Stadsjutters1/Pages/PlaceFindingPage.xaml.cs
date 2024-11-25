@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Stadsjutters1.Pages;
 
-public partial class HomePage : ContentPage
+public partial class PlaceFindingPage : ContentPage
 {
-    public HomePage()
+    public PlaceFindingPage()
     {
         InitializeComponent();
     }
-    
 }
