@@ -5,7 +5,7 @@
     xmlns:local="clr-namespace:Stadsjutters1"
     xmlns:pages="clr-namespace:Stadsjutters1.Pages"
     Title="Stadsjutters1"
-    TabBarBackgroundColor="Blue"
+
     FlyoutBehavior="Flyout">
 
     <TabBar>
