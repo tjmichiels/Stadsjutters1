@@ -7,32 +7,11 @@
     xmlns:local="clr-namespace:Stadsjutters1"
     xmlns:pages="clr-namespace:Stadsjutters1.Pages"
     Title="Stadsjutters1"
+    TabBarIsVisible="True"
+    TabBarBackgroundColor="Azure"
     FlyoutBehavior="Flyout">
     
-
-    <!-- Primaire navigatiebalk -->
-    <TabBar>
-        <Tab Title="Home" Icon="home_24dp_f19e39.png">
-            <ShellContent Title="Home" Route="HomePage" ContentTemplate="{DataTemplate pages:HomePage}" />
-        </Tab>
-
-        <Tab Title="Vondsten" Icon="package_2_24dp_f19e39.png*">
-            <ShellContent ContentTemplate="{DataTemplate pages:FindingsPage}" />
-        </Tab>
-
-        <Tab Title="Plaatsen" Icon="add_24dp_f19e39.png">
-            <ShellContent ContentTemplate="{DataTemplate pages:PlaceFindingPage}" />
-        </Tab>
-
-        <Tab Title="Chats" Icon="chat_bubble_24dp_f19e39.png">
-            <ShellContent ContentTemplate="{DataTemplate pages:ChatsPage}" />
-        </Tab>
-
-        <Tab Title="Meldingen" Icon="notifications_24dp_f19e39.png">
-            <ShellContent ContentTemplate="{DataTemplate pages:NotificationsPage}" />
-        </Tab>
-    </TabBar>
-
+    
     <Shell.TitleView>
         <Grid HorizontalOptions="FillAndExpand" Padding="10" ColumnDefinitions="*, Auto">
             <!-- Center the Label -->
@@ -53,7 +32,43 @@
             </Image>
         </Grid>
     </Shell.TitleView>
+    
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate pages:HomePage}"
+        Route="HomePage"
+        Icon="home_24dp_f19e39.png">
+    </ShellContent>
+    <ShellContent
+        Title="Vondsten"
+        ContentTemplate="{DataTemplate pages:FindingsPage}"
+        Route="FindingsPage"
+        Icon="package_2_24dp_f19e39.png*">
+    </ShellContent>
 
+    <!-- Primaire navigatiebalk -->
+    <TabBar>
+        <Tab Title="Home" Icon="home_24dp_f19e39.png">
+            <ShellContent Title="Home" Route="HomePage" ContentTemplate="{DataTemplate pages:HomePage}" />
+        </Tab>
+    
+        <Tab Title="Vondsten" Icon="package_2_24dp_f19e39.png*">
+            <ShellContent Title="Vondsten" Route="FindingsPage" ContentTemplate="{DataTemplate pages:FindingsPage}" />
+        </Tab>
+    
+        <Tab Title="Plaatsen" Icon="add_24dp_f19e39.png">
+            <ShellContent Title="Plaats vondst" Route="PlaceFindingPage" ContentTemplate="{DataTemplate pages:PlaceFindingPage}" />
+        </Tab>
+    
+        <Tab Title="Chats" Icon="chat_bubble_24dp_f19e39.png">
+            <ShellContent Title="Chats" Route="ChatsPage" ContentTemplate="{DataTemplate pages:ChatsPage}" />
+        </Tab>
+    
+        <Tab Title="Meldingen" Icon="notifications_24dp_f19e39.png">
+            <ShellContent Title="Meldingen" Route="NotificationsPage" ContentTemplate="{DataTemplate pages:NotificationsPage}" />
+        </Tab>
+    </TabBar>
+    
     <!-- Flyout -->
     <FlyoutItem Title="Home" Icon="home_24dp_f19e39.png">
         <ShellContent ContentTemplate="{DataTemplate pages:HomePage}" Shell.NavBarIsVisible="True" />
@@ -61,31 +76,31 @@
     <FlyoutItem Title="Profiel" Icon="person_24dp_f19e39.png">
         <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-
+    
     <FlyoutItem Title="Mijn straat-/huisvondsten" Icon="package_2_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:MyFindingsPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-
+    
     <FlyoutItem Title="Mijn beoordelingen" Icon="star_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:MyReviewsPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-
+    
     <FlyoutItem Title="Opgeslagen vondsten" Icon="bookmark_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:SavedFindingsPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-
+    
     <FlyoutItem Title="Instellingen" Icon="settings_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:SettingsPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-
+    
     <FlyoutItem Title="Beheerdersdashboard" Icon="dashboard_2_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:AdminDashboardPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-
+    
     <FlyoutItem Title="Log uit" Icon="logout_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:LogoutPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-
+    
     <FlyoutItem Title="Log in" Icon="login_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" Shell.PresentationMode="ModalAnimated" />
     </FlyoutItem>
