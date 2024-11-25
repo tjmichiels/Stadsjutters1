@@ -9,27 +9,27 @@
     Title="Stadsjutters1"
     FlyoutBehavior="Flyout">
     
-    
-    <Shell.TitleView>
-        <Grid HorizontalOptions="FillAndExpand" Padding="10" ColumnDefinitions="*, Auto">
-            <!-- Center the Label -->
-            <Label Grid.Column="0"
-                   Text="Paginanaam"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   FontSize="Medium" />
-
-            <!-- Align the Image to the right -->
-            <Image Grid.Column="1"
-                   Source="person_24dp_f19e39.png"
-                   HorizontalOptions="End"
-                   VerticalOptions="Center">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding OpenFlyoutCommand}" />
-                </Image.GestureRecognizers>
-            </Image>
-        </Grid>
-    </Shell.TitleView>
+    <!-- -->
+    <!-- <Shell.TitleView> -->
+    <!--     <Grid HorizontalOptions="FillAndExpand" Padding="10" ColumnDefinitions="*, Auto"> -->
+    <!--         ~1~ Center the Label @1@ -->
+    <!--         <Label Grid.Column="0" -->
+    <!--                Text="{Binding CurrentTitle}" -->
+    <!--                HorizontalOptions="Center" -->
+    <!--                VerticalOptions="Center" -->
+    <!--                FontSize="Medium" /> -->
+    <!-- -->
+    <!--         ~1~ Align the Image to the right @1@ -->
+    <!--         <Image Grid.Column="1" -->
+    <!--                Source="person_24dp_f19e39.png" -->
+    <!--                HorizontalOptions="End" -->
+    <!--                VerticalOptions="Center"> -->
+    <!--             <Image.GestureRecognizers> -->
+    <!--                 <TapGestureRecognizer Command="{Binding OpenFlyoutCommand}" /> -->
+    <!--             </Image.GestureRecognizers> -->
+    <!--         </Image> -->
+    <!--     </Grid> -->
+    <!-- </Shell.TitleView> -->
    
     <TabBar>
         <Tab Title="Home" Icon="home_24dp_f19e39.png">
