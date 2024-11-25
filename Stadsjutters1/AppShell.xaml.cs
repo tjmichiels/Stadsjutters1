@@ -6,8 +6,6 @@ namespace Stadsjutters1;
 public partial class AppShell : Shell
 {
 
-    public ICommand OpenFlyoutCommand { get; }
-
     public AppShell()
     {
         InitializeComponent();
@@ -46,6 +44,10 @@ public partial class AppShell : Shell
             new() { Name = "Log uit", Icon = "logout_24dp_000000.png" }
         };
 
+
+       
+
+
         // Set the ListView's item source
         FlyoutListView.ItemsSource = flyoutItems;
     }
@@ -55,6 +57,7 @@ public partial class AppShell : Shell
     {
         Shell.Current.FlyoutIsPresented = true; // Open het Flyout-menu
     }
+
 
     private async void FlyoutListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {

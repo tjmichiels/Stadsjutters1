@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Stadsjutters1.ViewModel;
-
 namespace Stadsjutters1;
 
 public partial class SettingsPage : ContentPage
@@ -29,11 +27,11 @@ public partial class SettingsPage : ContentPage
         {
             if (tappedItem.Name == "Accountinstelling")
             {
-                await Navigation.PushAsync(new HomePage(new HomeViewModel())); // Navigate to AccountSettingsPage
+                await Navigation.PushAsync(new AccountSettingsPage()); // Navigate to AccountSettingsPage
             }
             else if (tappedItem.Name == "Notificatie-instellingen")
             {
-                await Navigation.PushAsync(new SettingsPage()); // Navigate to NotificationSettingsPage
+                await Navigation.PushAsync(new NotificationSettingsPage()); // Navigate to NotificationSettingsPage
             }
         }
 
