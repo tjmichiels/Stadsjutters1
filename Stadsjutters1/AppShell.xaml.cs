@@ -1,11 +1,17 @@
 ﻿using Stadsjutters1.Pages;
+using System.Windows.Input;
 namespace Stadsjutters1;
 
 public partial class AppShell : Shell
 {
+
+    public ICommand OpenFlyoutCommand { get; }
+
     public AppShell()
     {
         InitializeComponent();
+
+
 
         // Define the flyout items
         var flyoutItems = new List<Item>
@@ -44,7 +50,6 @@ public partial class AppShell : Shell
                     await Navigation.PushAsync(new SavedFindingsPage());
                     break;
                 case "Instellingen":
-                    Shell.SetTabBarIsVisible(this, false);
                     await Navigation.PushAsync(new SettingsPage());
                     break;
                 case "Beheerdersdashboard":
@@ -59,16 +64,12 @@ public partial class AppShell : Shell
                 default:
                     break;
             }
-            Shell.Current.FlyoutIsPresented = false;
-            
+            Current.FlyoutIsPresented = false;
         }
 
         // Deselect the item
         ((ListView)sender).SelectedItem = null;
     }
-
-
-
 
     public class Item
     {
