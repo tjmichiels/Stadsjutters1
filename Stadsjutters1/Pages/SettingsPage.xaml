@@ -9,7 +9,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Padding="10">
-                            <Image Source="{Binding Icon}" WidthRequest="24" HeightRequest="24" Margin="0,0,10,0"/>
+                            <Image Source="{Binding Icon}" WidthRequest="24" HeightRequest="24" Margin="0,0,10,0" />
                             <Label Text="{Binding Name}" VerticalOptions="Center" />
                         </StackLayout>
                     </ViewCell>

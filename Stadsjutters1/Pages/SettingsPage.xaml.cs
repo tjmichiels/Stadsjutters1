@@ -11,7 +11,7 @@ public partial class SettingsPage : ContentPage
     public SettingsPage()
     {
         InitializeComponent();
-        
+
         var items = new List<Item>
         {
             new() { Name = "Accountinstelling", Icon = "person_24dp_000000.png" },
@@ -20,10 +20,10 @@ public partial class SettingsPage : ContentPage
 
         MyListView.ItemsSource = items;
     }
-    
+
     public class Item
     {
         public string? Name { get; set; }
-        public string? Icon { get; set; } 
+        public string? Icon { get; set; }
     }
 }

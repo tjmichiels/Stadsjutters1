@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <Shell
     x:Class="Stadsjutters1.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -6,19 +7,19 @@
     xmlns:local="clr-namespace:Stadsjutters1"
     xmlns:pages="clr-namespace:Stadsjutters1.Pages"
     Title="Stadsjutters1"
-    FlyoutBehavior="Flyout"
-    >
+    FlyoutBehavior="Flyout">
     
+
     <!-- Primaire navigatiebalk -->
     <TabBar>
         <Tab Title="Home" Icon="home_24dp_f19e39.png">
-            <ShellContent Title="Home" Route="Home" ContentTemplate="{DataTemplate pages:HomePage}" />
+            <ShellContent Title="Home" Route="HomePage" ContentTemplate="{DataTemplate pages:HomePage}" />
         </Tab>
-        
+
         <Tab Title="Vondsten" Icon="package_2_24dp_f19e39.png*">
             <ShellContent ContentTemplate="{DataTemplate pages:FindingsPage}" />
         </Tab>
-        
+
         <Tab Title="Plaatsen" Icon="add_24dp_f19e39.png">
             <ShellContent ContentTemplate="{DataTemplate pages:PlaceFindingPage}" />
         </Tab>
@@ -31,54 +32,61 @@
             <ShellContent ContentTemplate="{DataTemplate pages:NotificationsPage}" />
         </Tab>
     </TabBar>
-    
+
     <Shell.TitleView>
-        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="10">
-            <Label Text="Paginanaam" HorizontalOptions="CenterAndExpand" FontSize="Medium" />
-            <Image Source="person_24dp_f19e39.png"
+        <Grid HorizontalOptions="FillAndExpand" Padding="10" ColumnDefinitions="*, Auto">
+            <!-- Center the Label -->
+            <Label Grid.Column="0"
+                   Text="Paginanaam"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="Medium" />
+
+            <!-- Align the Image to the right -->
+            <Image Grid.Column="1"
+                   Source="person_24dp_f19e39.png"
                    HorizontalOptions="End"
                    VerticalOptions="Center">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding OpenFlyoutCommand}" />
                 </Image.GestureRecognizers>
             </Image>
-        </StackLayout>
+        </Grid>
     </Shell.TitleView>
-    
+
     <!-- Flyout -->
     <FlyoutItem Title="Home" Icon="home_24dp_f19e39.png">
-        <ShellContent ContentTemplate="{DataTemplate pages:HomePage}" Shell.NavBarIsVisible="True"/>
+        <ShellContent ContentTemplate="{DataTemplate pages:HomePage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
     <FlyoutItem Title="Profiel" Icon="person_24dp_f19e39.png">
-        <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}" Shell.NavBarIsVisible="True"/>
+        <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-    
+
     <FlyoutItem Title="Mijn straat-/huisvondsten" Icon="package_2_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:MyFindingsPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-    
+
     <FlyoutItem Title="Mijn beoordelingen" Icon="star_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:MyReviewsPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-    
+
     <FlyoutItem Title="Opgeslagen vondsten" Icon="bookmark_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:SavedFindingsPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-    
+
     <FlyoutItem Title="Instellingen" Icon="settings_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:SettingsPage}" Shell.NavBarIsVisible="True" />
-        <ShellContent ContentTemplate="{DataTemplate local:Instellingen}" />
     </FlyoutItem>
-    
+
     <FlyoutItem Title="Beheerdersdashboard" Icon="dashboard_2_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:AdminDashboardPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-    
+
     <FlyoutItem Title="Log uit" Icon="logout_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:LogoutPage}" Shell.NavBarIsVisible="True" />
     </FlyoutItem>
-    
+
     <FlyoutItem Title="Log in" Icon="login_24dp_000000.png">
-        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" Shell.PresentationMode="ModalAnimated"/>
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" Shell.PresentationMode="ModalAnimated" />
     </FlyoutItem>
 </Shell>
