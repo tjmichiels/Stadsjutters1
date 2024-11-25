@@ -47,7 +47,7 @@
 
         <!-- Images -->
         <MauiImage Include="Resources\Images\*" />
-<!--        <MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />-->
+        <!--        <MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />-->
 
         <!-- Custom Fonts -->
         <MauiFont Include="Resources\Fonts\*" />
@@ -57,152 +57,75 @@
     </ItemGroup>
 
     <ItemGroup>
-<<<<<<< HEAD
-        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
-=======
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0-preview2" />
->>>>>>> afd3cf5c6ee252594d1acf47fb13cd04f8b8d3bd
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
     </ItemGroup>
 
     <ItemGroup>
-<<<<<<< HEAD
-      <Folder Include="Pages\" />
-=======
-      <MauiXaml Update="Pages\ChatsPage.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </MauiXaml>
-      <MauiXaml Update="Pages\AdminDashboardPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\LoginPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\LogoutPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\MyFindingsPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\MyReviewsPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\ProfilePage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\SavedFindingsPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\SettingsPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
->>>>>>> afd3cf5c6ee252594d1acf47fb13cd04f8b8d3bd
+        <MauiXaml Update="Pages\ChatsPage.xaml">
+            <Generator>MSBuild:Compile</Generator>
+        </MauiXaml>
+        <MauiXaml Update="Pages\AdminDashboardPage.xaml">
+            <SubType>Designer</SubType>
+        </MauiXaml>
+        <MauiXaml Update="Pages\LoginPage.xaml">
+            <SubType>Designer</SubType>
+        </MauiXaml>
+        <MauiXaml Update="Pages\LogoutPage.xaml">
+            <SubType>Designer</SubType>
+        </MauiXaml>
+        <MauiXaml Update="Pages\MyFindingsPage.xaml">
+            <SubType>Designer</SubType>
+        </MauiXaml>
+        <MauiXaml Update="Pages\MyReviewsPage.xaml">
+            <SubType>Designer</SubType>
+        </MauiXaml>
+        <MauiXaml Update="Pages\ProfilePage.xaml">
+            <SubType>Designer</SubType>
+        </MauiXaml>
+        <MauiXaml Update="Pages\SavedFindingsPage.xaml">
+            <SubType>Designer</SubType>
+        </MauiXaml>
+        <MauiXaml Update="Pages\SettingsPage.xaml">
+            <SubType>Designer</SubType>
+        </MauiXaml>
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Pages\AdminDashboardPage.xaml.cs">
-        <DependentUpon>AdminDashboardPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\LoginPage.xaml.cs">
-        <DependentUpon>LoginPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\LogoutPage.xaml.cs">
-        <DependentUpon>LogoutPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\MyFindingsPage.xaml.cs">
-        <DependentUpon>MyFindingsPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\MyReviewsPage.xaml.cs">
-        <DependentUpon>MyReviewsPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\ProfilePage.xaml.cs">
-        <DependentUpon>ProfilePage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\SavedFindingsPage.xaml.cs">
-        <DependentUpon>SavedFindingsPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\SettingsPage.xaml.cs">
-        <DependentUpon>SettingsPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-        <ApplicationTitle>Stadsjutters Almere</ApplicationTitle>
-        <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" ForegroundScale="0.65" Color="#703e44" />
-        <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#703e44" BaseSize="128,128" />
-<!--        <MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />-->
-        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
-        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0-preview2" />
-      <Folder Include="Pages\" />
-      <MauiXaml Update="Pages\ChatsPage.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </MauiXaml>
-      <MauiXaml Update="Pages\AdminDashboardPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\LoginPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\LogoutPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\MyFindingsPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\MyReviewsPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\ProfilePage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\SavedFindingsPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-      <MauiXaml Update="Pages\SettingsPage.xaml">
-        <SubType>Designer</SubType>
-      </MauiXaml>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Update="Pages\AdminDashboardPage.xaml.cs">
-        <DependentUpon>AdminDashboardPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\LoginPage.xaml.cs">
-        <DependentUpon>LoginPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\LogoutPage.xaml.cs">
-        <DependentUpon>LogoutPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\MyFindingsPage.xaml.cs">
-        <DependentUpon>MyFindingsPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\MyReviewsPage.xaml.cs">
-        <DependentUpon>MyReviewsPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\ProfilePage.xaml.cs">
-        <DependentUpon>ProfilePage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\SavedFindingsPage.xaml.cs">
-        <DependentUpon>SavedFindingsPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Pages\SettingsPage.xaml.cs">
-        <DependentUpon>SettingsPage.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
+        <Compile Update="Pages\AdminDashboardPage.xaml.cs">
+            <DependentUpon>AdminDashboardPage.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Update="Pages\LoginPage.xaml.cs">
+            <DependentUpon>LoginPage.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Update="Pages\LogoutPage.xaml.cs">
+            <DependentUpon>LogoutPage.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Update="Pages\MyFindingsPage.xaml.cs">
+            <DependentUpon>MyFindingsPage.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Update="Pages\MyReviewsPage.xaml.cs">
+            <DependentUpon>MyReviewsPage.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Update="Pages\ProfilePage.xaml.cs">
+            <DependentUpon>ProfilePage.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Update="Pages\SavedFindingsPage.xaml.cs">
+            <DependentUpon>SavedFindingsPage.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Update="Pages\SettingsPage.xaml.cs">
+            <DependentUpon>SettingsPage.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
     </ItemGroup>
 
 </Project>
