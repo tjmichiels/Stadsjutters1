@@ -27,11 +27,11 @@ public partial class SettingsPage : ContentPage
         {
             if (tappedItem.Name == "Accountinstelling")
             {
-                await Navigation.PushAsync(new HomePage()); // Navigate to AccountSettingsPage
+                await Navigation.PushAsync(new AccountSettingsPage()); // Navigate to AccountSettingsPage
             }
             else if (tappedItem.Name == "Notificatie-instellingen")
             {
-                await Navigation.PushAsync(new SettingsPage()); // Navigate to NotificationSettingsPage
+                await Navigation.PushAsync(new NotificationSettingsPage()); // Navigate to NotificationSettingsPage
             }
         }
 

@@ -57,6 +57,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Compile Remove="Pages\NotificationSettingsPage.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0-preview2" />
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
@@ -64,6 +68,9 @@
     </ItemGroup>
 
     <ItemGroup>
+        <MauiXaml Update="Pages\AccountSettingsPage.xaml">
+          <Generator>MSBuild:Compile</Generator>
+        </MauiXaml>
         <MauiXaml Update="Pages\ChatsPage.xaml">
             <Generator>MSBuild:Compile</Generator>
         </MauiXaml>
@@ -81,6 +88,9 @@
         </MauiXaml>
         <MauiXaml Update="Pages\MyReviewsPage.xaml">
             <SubType>Designer</SubType>
+        </MauiXaml>
+        <MauiXaml Update="Pages\NotificationSettingsPage.xaml">
+          <Generator>MSBuild:Compile</Generator>
         </MauiXaml>
         <MauiXaml Update="Pages\ProfilePage.xaml">
             <SubType>Designer</SubType>
