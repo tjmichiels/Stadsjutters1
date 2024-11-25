@@ -14,6 +14,31 @@
         </StackLayout>
     </Shell.TitleView>
 
+
+
+    <TabBar>
+        <Tab Title="Home" Icon="logostadsjutters.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+
+        <Tab Title="Vondsten" Icon="logostadsjutters.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+
+        <Tab Title="Plaatsen" Icon="logostadsjutters.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+
+        <Tab Title="Chats" Icon="logostadsjutters.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+
+        <Tab Title="Meldingen" Icon="logostadsjutters.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+    </TabBar>
+
+
     <FlyoutItem Title="Profiel" Icon="person_24dp_f19e39.png">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" /> 
     </FlyoutItem>
@@ -52,21 +77,5 @@
    
     
 
-    <TabBar>
-        <Tab Title="Home" Icon="logostadsjutters.svg">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
-        </Tab>
-        
-        <Tab Title="Vondsten" Icon="logostadsjutters.svg">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
-        </Tab>
-        
-        <Tab Title="Plaatsen" Icon="logostadsjutters.svg">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
-        </Tab>
-
-        <Tab Title="Chats" Icon="logostadsjutters.svg">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
-        </Tab>
 
 </Shell>
