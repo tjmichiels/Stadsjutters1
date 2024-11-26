@@ -14,23 +14,35 @@
         </StackLayout>
     </Shell.TitleView>
 
-    <FlyoutItem Title="Profiel" Icon="logostadsjutters.svg">
+    <FlyoutItem Title="Profiel" Icon="person_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" /> 
     </FlyoutItem>
 
+    <FlyoutItem Title="Mijn straat-/huisvondsten" Icon="package_2_24dp_000000.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Mijn beoordelingen" Icon="star_24dp_000000.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Opgeslagen vondsten" Icon="bookmark_24dp_000000.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
     <FlyoutItem Title="Mijn straat-/huisvondsten" Icon="logostadsjutters.svg">
-        <ShellContent ContentTemplate="{DataTemplate local:Huisvondsten}" />
-    </FlyoutItem>
-
-    <FlyoutItem Title="Mijn beoordelingen" Icon="logostadsjutters.svg">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
-
-    <FlyoutItem Title="Opgeslagen vondsten" Icon="logostadsjutters.svg">
+    
+    <FlyoutItem Title="Beheerdersdashboard" Icon="dashboard_2_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
-
-    <FlyoutItem Title="Instellingen" Icon="logostadsjutters.svg">
+    
+    <FlyoutItem Title="Log uit" Icon="logout_24dp_000000.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Log in" Icon="login_24dp_000000.png">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 
