@@ -11,7 +11,6 @@ public partial class AppShell : Shell
         InitializeComponent();
         
         // Command to open the Flyout
-        OpenFlyoutCommand = new Command(OpenFlyoutMenu);
         BindingContext = this;
         
         Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
