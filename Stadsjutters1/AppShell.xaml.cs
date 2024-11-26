@@ -6,6 +6,8 @@ namespace Stadsjutters1;
 public partial class AppShell : Shell
 {
 
+    public ICommand OpenFlyoutCommand { get; }
+    
     public AppShell()
     {
         InitializeComponent();
