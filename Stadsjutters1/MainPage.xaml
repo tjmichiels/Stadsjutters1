@@ -4,9 +4,16 @@
              x:Class="Stadsjutters1.MainPage"
              BackgroundColor="White">
     
-    <Grid RowDefinitions="100, Auto, *"
-          ColumnDefinitions=".75*, .25*">
-        
+    <Grid RowDefinitions="auto, Auto, auto"
+          ColumnDefinitions=".75*, .25*"
+          Padding="10">
+        <Entry Placeholder="wauw"
+               Grid.Row="0"
+               TextColor="Black"/>
+        <Button Text="Add"
+                Grid.Row="0"
+                Grid.Column="1"/>
+
     </Grid>
 </ContentPage>
 
