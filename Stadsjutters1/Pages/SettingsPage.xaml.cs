@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 namespace Stadsjutters1;
 
 public partial class SettingsPage : ContentPage
@@ -11,7 +12,8 @@ public partial class SettingsPage : ContentPage
     public SettingsPage()
     {
         InitializeComponent();
-
+        Routing.RegisterRoute(nameof(NotificationSettingsPage), typeof(NotificationSettingsPage));
+        Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
         var items = new List<Item>
         {
             new() { Name = "Accountinstelling", Icon = "person_24dp_000000.png" },
@@ -27,11 +29,11 @@ public partial class SettingsPage : ContentPage
         {
             if (tappedItem.Name == "Accountinstelling")
             {
-                await Navigation.PushAsync(new AccountSettingsPage()); // Navigate to AccountSettingsPage
+                await Shell.Current.GoToAsync(nameof(AccountSettingsPage)); // Navigate to AccountSettingsPage
             }
             else if (tappedItem.Name == "Notificatie-instellingen")
             {
-                await Navigation.PushAsync(new NotificationSettingsPage()); // Navigate to NotificationSettingsPage
+                await Shell.Current.GoToAsync(nameof(NotificationSettingsPage)); // Navigate to NotificationSettingsPage
             }
         }
 
@@ -39,6 +41,11 @@ public partial class SettingsPage : ContentPage
         ((ListView)sender).SelectedItem = null;
     }
 
+    protected override bool OnBackButtonPressed()
+    {
+        Shell.Current.GoToAsync("..");
+        return true;
+    }
 
 
     public class Item

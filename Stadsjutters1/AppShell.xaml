@@ -30,7 +30,12 @@
     <!--         </Image> -->
     <!--     </Grid> -->
     <!-- </Shell.TitleView> -->
-   
+
+        
+    
+    
+    
+    
     <TabBar>
         <Tab Title="Home" Icon="home_24dp_f19e39.png">
             <ShellContent Title="Home" Route="HomePage" ContentTemplate="{DataTemplate pages:HomePage}" />
@@ -54,6 +59,8 @@
             <ShellContent Title="Meldingen" Route="NotificationsPage" ContentTemplate="{DataTemplate pages:NotificationsPage}" />
         </Tab>
     </TabBar>
+    <ShellContent Route="NotificationSettingsPage" ContentTemplate="{DataTemplate pages:NotificationSettingsPage}" />
+
 
     <Shell.FlyoutContent>
         <ListView x:Name="FlyoutListView"
@@ -64,6 +71,7 @@
                         <StackLayout Orientation="Horizontal" Padding="10">
                             <Image Source="{Binding Icon}" WidthRequest="24" HeightRequest="24" Margin="0,0,10,0"/>
                             <Label Text="{Binding Name}" VerticalOptions="Center" />
+
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
