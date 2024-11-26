@@ -54,7 +54,7 @@ public partial class AppShell : Shell
     [RelayCommand]
     private void OpenFlyoutMenu()
     {
-        Shell.Current.FlyoutIsPresented = true; // Open het Flyout-menu
+        Current.FlyoutIsPresented = true; // Open het Flyout-menu
     }
 
 
